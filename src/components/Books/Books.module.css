@@ -1,0 +1,17 @@
+.searchedTerm{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.searchedTerm span{
+    font-weight: bold;
+}
+
+.bookContainer{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

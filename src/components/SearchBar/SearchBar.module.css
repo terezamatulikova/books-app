@@ -1,0 +1,36 @@
+.searchBox{
+    width: 50%;
+    height: 35px;
+    margin: auto;
+    margin-top: 1%;
+    display: flex;
+}
+
+.searchBar{
+    flex: 4;
+    margin-right: 1%;
+    text-align: center;
+    border:none;
+    outline: none;
+}
+
+.searchBar:focus{
+    background-color: #eeeeee;
+}
+
+.button{
+    flex: 1;
+    transition: 0.2s;
+    font-weight: bold;
+    color:white;
+    background-color: #a2836e;
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:active{
+    background-color: #8e7461;
+}
+

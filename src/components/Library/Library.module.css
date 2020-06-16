@@ -1,0 +1,21 @@
+.myLibrary{
+    position: fixed;
+    top:2%;
+    left:90%;
+    width: 125px;
+    z-index: 100;
+    transition: 0.2s;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    background-color: #a2836e;
+    border:none;
+    border-radius: 10px 0px;
+    outline: none;
+    cursor: pointer;
+    padding: 1%;
+}
+
+.myLibrary:active{
+    background-color: #8e7461;
+}

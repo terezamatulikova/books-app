@@ -1,0 +1,60 @@
+.bookCard{
+    position: relative;
+    width: 20%;
+    margin: 1% 1%;
+    background-color: #eeeeee;
+}
+
+.bookImg{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 40%;
+    background-color: white;
+}
+.bookCard img{
+    width: 50%;
+    margin-top: 15%;
+    margin-bottom: 3%;
+}
+
+.bookCategory{
+    margin-top: 4px;
+    width: 100%;
+    text-align: right;
+    color:white;
+}
+
+.bookCategory span{
+    background-color: #828282;
+    padding: 5px;
+}
+
+.bookInfo{
+    padding: 15px;
+}
+
+.bookCard button{
+    position: absolute;
+    top:10px;
+    right:10px;
+    width: 13%;
+    font-size: 18px;
+    color: white;
+    background-color: #e5e5e5;
+    border-style: none;
+    border-radius: 50%;
+    padding: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover .green{
+    transition: color 0.5s;
+    color: yellowgreen;
+}
+
+button:hover .red{
+    transition: color 0.5s;
+    color: red;
+}
