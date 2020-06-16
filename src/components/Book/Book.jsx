@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import styles from "./Book.module.css"
 import cx from "classnames";
 
-function Book({addFavourite, book}) {
+export default function Book({addFavourite, book}) {
     const [favourite, setFavourite] = useState(localStorage.getItem(book.id) ? {isFavourite: true, icon: 'fas fa-times'} : {isFavourite: false, icon: 'fas fa-plus'});
 
     const favouriteButtonClickHandler = () => {
@@ -33,6 +33,4 @@ function Book({addFavourite, book}) {
             <button onClick={favouriteButtonClickHandler}><i className={cx(favourite.icon, (favourite.isFavourite ? styles.red : styles.green))}/></button>
         </div>
     )
-}
-
-export default Book;
+};

@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./SearchBar.module.css"
 
-function SearchBar({ title, setTitle, author, setAuthor, category, setCategory, search }) {
+export default function SearchBar({ title, setTitle, author, setAuthor, category, setCategory, search }) {
     return (
         <div className={styles.searchBox}>
             <input value={title} className={styles.searchBar} type="text" onChange={event => setTitle(event.target.value)} placeholder="Title"/>
@@ -11,6 +11,4 @@ function SearchBar({ title, setTitle, author, setAuthor, category, setCategory, 
             <button className={styles.button} onClick={search}><i className="fas fa-search"></i></button>
         </div>
     )
-}
-
-export default SearchBar;
+};

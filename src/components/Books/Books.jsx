@@ -3,7 +3,7 @@ import Book from "../Book/Book";
 
 import styles from "./Books.module.css";
 
-function Books({ addFavourite, books, searchedTerm }) {
+export default function Books({ addFavourite, books, searchedTerm }) {
     return (
         <div className={styles.bookContainer}>
             { searchedTerm && <div className={styles.searchedTerm}>We found these results for your searched term <span>"{searchedTerm}"</span>.</div>}
@@ -12,6 +12,4 @@ function Books({ addFavourite, books, searchedTerm }) {
             ))}
         </div>
     )
-}
-
-export default Books;
+};

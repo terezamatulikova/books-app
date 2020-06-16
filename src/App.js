@@ -7,7 +7,7 @@ import './App.css';
 import {GetBooks, GetBook} from "./api";
 
 
-function App(){
+export default function App(){
     const [books, setBooks] = useState([]);
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
@@ -100,6 +100,4 @@ function App(){
             )}
         </div>
     )
-}
-
-export default App;
+};
